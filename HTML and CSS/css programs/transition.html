@@ -1,0 +1,85 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transform_example</title>
+<style>
+
+         .container{
+            display:flex;
+            justify-content:space-around;
+            margin-top:50px;
+        }
+        .box1{
+            width:200px;
+            height:200px;
+            background:red;
+            text-align:center;
+            line-height:200px;
+            transition:0.5s ease; 
+        
+        }
+
+        .box1:hover{
+            transform:translate(-50px,25px);
+        }
+
+        .box2{
+            width:200px;
+            height:200px;
+            background:lightblue;
+            text-align:center;
+            line-height:200px;
+            transition:0.5s;
+        }
+
+        .box2:hover{
+            transform:rotate(-180deg);
+        }
+
+        .box3{
+            width:200px;
+            height:200px;
+            background:lightgreen;
+            text-align:center;
+            line-height:200px;
+            transition:0.5s;
+        }
+
+        .box3:hover{
+            transform:scale(1.2);
+        }
+        .box4{
+            width:200px;
+            height:200px;
+            background:yellow;
+            text-align:center;
+            line-height:200px;
+            transition:0.5s;
+        }
+        .box4:hover{
+            transform:skew(-30deg,-30deg);
+        }
+
+</style>
+</head>
+
+<body>
+
+    <div class="container">
+     <div class="box1">
+        Move
+     </div>
+     <div class="box2">
+        Rotate
+     </div>
+      <div class="box3">
+        Scale
+      </div>
+      <div class="box4">
+        Skew
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Media Query Example</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+        body{
+            background:orange;
+        }
+        h1{
+            font-size:40px;
+            }
+        .container{
+            display:flex;
+            justify-content:space-around;
+            margin-top:50px;
+        }
+        
+        .box{
+            flex:1;
+            height:100px;
+            background:lightblue;
+            border:2px solid black;
+            text-align:center;
+            line-height:100px;
+            }
+             @media(max-width:600px){
+                    body{
+                        background:white;
+                    }
+                    h1{
+                        font-size:40px;
+                    }
+                    .container{
+                        flex-direction:column;
+
+                    }
+                    .box{
+                        background:lightgreen;
+                    }
+        }
+</style>
+
+
+</head>
+
+<body>
+
+    <h1>Media Query Example</h1>
+
+    <p>Resize the browser window.</p>
+
+    <div class="container">
+
+        <div class="box">Box 1</div>
+
+        <div class="box">Box 2</div>
+
+        <div class="box">Box 3</div>
+
+    </div>
+</body>
+
+</html>

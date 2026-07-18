@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Styling</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f2f2;
+        }
+
+        .container {
+
+            width: 400px;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 15px;
+            border: 2px solid gray;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+
+        }
+        button{
+            width: 100%;
+            padding: 10px;
+            background: green;
+            border-radius:5px;
+            color:white;
+            border:2px solid green;
+            font-size:16px
+            cursor:pointer;
+            transition: 0.5s;
+        }
+  
+  buttom:hover{
+    background:darkgreen;
+  }
+  
+  input:focus,select:focus,textarea:focus{
+    border-color:blue;
+    background:white;
+    outline:none;
+  }
+  
+  body{
+    background:white;
+  }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h2>Registration Form</h2>
+        <label>Name</label>
+        <input type="text" placeholder="Enter Name">
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter Email">
+
+        <label>City</label>
+        <select>
+
+            <option>Pune</option>
+            <option>Mumbai</option>
+            <option>Delhi</option>
+
+        </select>
+
+        <label>Message</label>
+        <textarea rows="4" placeholder="Enter Message"></textarea>
+        <button>Submit</button>
+       
+ 
+    </div>
+
+</body>
+</html>
